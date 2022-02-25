@@ -10,7 +10,7 @@ function HelloWorld() {
 
 function HelloWorldFancy() {
     console.log('%c Hello World! ', 'background-color: black; color: green;');
-    return ('%c Hello World!');
+    return;
 }
 
 function print(context) {
@@ -20,6 +20,20 @@ function print(context) {
     appDiv.appendChild(div)
 }
 
+function changeColor(element){
+    if (element.style.color != "blue") {
+        element.style.color = "blue";
+    } else {
+        element.style.color = "green";
+    }
+    return;
+}
+
+function counter(element){
+    element.innerHTML = parseInt(element.innerHTML) + 1;
+    return;
+}
+
 print(TrueFalse("yeet"));
 print(HelloWorld());
-print(HelloWorldFancy());
+

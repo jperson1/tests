@@ -34,6 +34,3 @@ function counter(element){
     return;
 }
 
-print(TrueFalse("yeet"));
-print(HelloWorld());
-

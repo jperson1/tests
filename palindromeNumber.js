@@ -4,11 +4,11 @@
  */
 
 // Given an int x, return true if x is a palindrome number.
- var isPalindrome = function(x) {
+var isPalindrome = function (x) {
     var forward = String(x);
     var backward = forward.split('').reverse().join('');
 
-    if (forward == backward){
+    if (forward == backward) {
         return true;
     }
     return false;

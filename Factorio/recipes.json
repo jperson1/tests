@@ -1,20 +1,17 @@
 {
-    type = "recipe",
-    name = "speed-module",
-    ingredients =
-    {
-        [
-            "advanced-circuit",
-            5
-        ],
-        [
-            "electronic-circuit",
-            5
-        ]
-    },
-    energy_required = 15,
-    result = "speed-module"
-},
+    "recipes": [
+        {
+            "name": "speed-module",
+            "ingredients": {
+                "advanced-circuit": 5,
+                "electronic-circuit": 5
+            },
+            "energy_required": 15,
+            "result": "speed-module"
+        },
+    ]
+}
+
 {
     type = "recipe",
     name = "speed-module-2",

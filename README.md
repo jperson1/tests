@@ -1,3 +1,6 @@
 # tests
 
-JS files to be run in index.html
+Test files - used accross machines.
+
+---
+Most files contain solutions to LeetCode problems. [LeetCode Problem Sets](https://leetcode.com/problemset/all/)

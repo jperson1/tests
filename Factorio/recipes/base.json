@@ -112,78 +112,61 @@
             },
             "energy_required": 60,
             "result": "effectivity-module-3"
+        },
+        {
+            "type": "recipe",
+            "name": "stack-inserter",
+            "enabled": false,
+            "ingredients": {
+                    "iron-gear-wheel":
+                    15,
+                    "electronic-circuit":
+                    15,
+                    "advanced-circuit":
+                    1,
+                    "fast-inserter":
+                    1
+            },
+            "result": "stack-inserter"
+        },
+        {
+            "type": "recipe",
+            "name": "stack-filter-inserter",
+            "enabled": false,
+            "ingredients": {
+                    "stack-inserter":
+                    1,
+                    "electronic-circuit":
+                    5
+            },
+            "result": "stack-filter-inserter"
+        },
+        {
+            "type": "recipe",
+            "name": "basic-oil-processing",
+            "category": "oil-processing",
+            "enabled": false,
+            "energy_required": 5,
+            "ingredients": {
+                    "type": "fluid",
+                    "name": "crude-oil",
+                    "amount": 100,
+                    "fluidbox_index": 2
+            },
+            "result": {
+                    "type": "fluid",
+                    "name": "petroleum-gas",
+                    "amount": 45,
+                    "fluidbox_index": 3
+            },
+            "icon": "__base__/graphics/icons/fluid/basic-oil-processing.png",
+            "icon_size": 64,
+            "icon_mipmaps": 4,
+            "subgroup": "fluid-recipes"
         }
     ]
 }
 
-
-{
-    "type": "recipe",
-    "name": "stack-inserter",
-    "enabled": false,
-    "ingredients": {
-        {
-            "iron-gear-wheel",
-            15
-        },
-        {
-            "electronic-circuit",
-            15
-        },
-        {
-            "advanced-circuit",
-            1
-        },
-        {
-            "fast-inserter",
-            1
-        }
-    },
-    "result": "stack-inserter"
-},
-{
-    "type": "recipe",
-    "name": "stack-filter-inserter",
-    "enabled": false,
-    "ingredients": {
-        {
-            "stack-inserter",
-            1
-        },
-        {
-            "electronic-circuit",
-            5
-        }
-    },
-    "result": "stack-filter-inserter"
-},
-{
-    "type": "recipe",
-    "name": "basic-oil-processing",
-    "category": "oil-processing",
-    "enabled": false,
-    "energy_required": 5,
-    "ingredients": {
-        {
-            "type": "fluid",
-            "name": "crude-oil",
-            "amount": 100,
-            "fluidbox_index": 2
-        }
-    },
-    "result": {
-        {
-            "type": "fluid",
-            "name": "petroleum-gas",
-            "amount": 45,
-            "fluidbox_index": 3
-        }
-    },
-    "icon": "__base__/graphics/icons/fluid/basic-oil-processing.png",
-    "icon_size": 64,
-    "icon_mipmaps": 4,
-    "subgroup": "fluid-recipes",
-},
 {
     "type": "recipe",
     "name": "advanced-oil-processing",

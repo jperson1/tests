@@ -1,0 +1,15 @@
+{
+    "recipes": [
+        {
+            "type": "recipe",
+            "name": "speed-module",
+            "enabled": false,
+            "ingredients": {
+                "advanced-circuit": 5,
+                "electronic-circuit": 5
+            },
+            "energy_required": 15,
+            "result": "speed-module"
+        }
+    ]
+}

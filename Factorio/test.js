@@ -33,13 +33,13 @@ function printProducts(recipe) {
 }
 
 function printRecipe(recipe) {
-    printIngredients(recipe);
     printProducts(recipe);
+    printIngredients(recipe);
     return;
 }
 
 var json = require('./recipes/base.json');
-//printNames(json);
+// printNames(json);
 // printIngredients(json.recipes[0]);
 // printProducts(json.recipes[0]);
-printRecipe(findRecipe(json, 'iron-stick'));
+printRecipe(findRecipe(json, 'accumulator'));

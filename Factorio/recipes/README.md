@@ -1,1 +1,0 @@
-base.json is unfinished. Currently thinking on good ways to format liquid recipes, and ways to clean up the ingredients/results sections so that I don't need to manually edit through 4000 lines of JSON.

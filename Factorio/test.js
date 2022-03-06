@@ -32,9 +32,21 @@ function printProducts(recipe) {
     return;
 }
 
+function printTime(recipe){
+    console.log("Time:");
+    if(recipe.energy_required){
+        console.log(recipe.energy_required);
+        return;
+    }
+    console.log(0.5);
+    return;
+}
+
 function printRecipe(recipe) {
     printProducts(recipe);
     printIngredients(recipe);
+    printTime(recipe);
+    console.log();
     return;
 }
 
@@ -43,3 +55,4 @@ var json = require('./recipes/base.json');
 // printIngredients(json.recipes[0]);
 // printProducts(json.recipes[0]);
 printRecipe(findRecipe(json, 'accumulator'));
+printRecipe(findRecipe(json, 'transport-belt'));

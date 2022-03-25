@@ -13,16 +13,16 @@
 
 //  Given the root of a binary tree, return the inorder traversal of its nodes' values.
 var inorderTraversal = function (root, sol) {
-    var print = function (node, sol) {
+    var helper = function (node, sol) {
         if (node) {
-            print(node.left, sol);
+            helper(node.left, sol);
             sol.push(node.val);
-            print(node.right, sol);
+            helper(node.right, sol);
         }
         return;
     }
 
     var sol = [];
-    print(root, sol);
+    helper(root, sol);
     return sol;
 };
